@@ -96,7 +96,7 @@ $(document).ready(function () {
     resultData = [
       {
         personality: '巷仔內',
-        pic: '../images/deer_a.svg',
+        pic: './images/deer_a.svg',
         color: '#E05934',
         tags: [
           '熟門熟路第一名',
@@ -107,7 +107,7 @@ $(document).ready(function () {
       },
       {
         personality: '真 · 文青',
-        pic: '../images/deer_b.svg',
+        pic: './images/deer_b.svg',
         color: '#1783AD',
         tags: [
           '好奇寶寶就是你',
@@ -118,7 +118,7 @@ $(document).ready(function () {
       },
       {
         personality: '凹豆咖',
-        pic: '../images/deer_c.svg',
+        pic: './images/deer_c.svg',
         color: '#009F7F',
         tags: [
           '遠離人類跑第一',
