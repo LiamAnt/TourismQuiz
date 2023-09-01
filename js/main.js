@@ -11,15 +11,15 @@ $(document).ready(function () {
 
   /* 按鈕效果 */
   $('.primaryBtn').hover(function() {
-    $(this).find('img').attr('src', '../images/arrow_icon_hover.svg');
+    $(this).find('img').attr('src', 'images/arrow_icon_hover.svg');
   }, function() {
-    $(this).find('img').attr('src', '../images/arrow_icon.svg');
+    $(this).find('img').attr('src', 'images/arrow_icon.svg');
   });
 
   $('.primaryBtn.result_btnRefresh').hover(function() {
-    $(this).find('img').attr('src', '../images/refresh_icon_hover.svg');
+    $(this).find('img').attr('src', 'images/refresh_icon_hover.svg');
   }, function() {
-    $(this).find('img').attr('src', '../images/refresh_icon.svg');
+    $(this).find('img').attr('src', 'images/refresh_icon.svg');
   });
   
   /* 開始 */
