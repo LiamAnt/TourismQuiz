@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script  src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="js/main.js"></script>
+  <title>永續旅人心理測驗</title>
+</head>
+
+<body>
+
+  <h2 class="title">永續旅人心理測驗</h2>
+  <div id="screenshot_area" class="content">
+    <div class="logowrap">
+      <img src="images/logo.svg" alt="" class="logowrap_logo">
+    </div>
+    <div class="middler">
+      <img src="images/mount.svg" alt="" class="mountain">
+      <img src="images/cloud.svg" alt="" class="cloud">
+    </div>
+
+    <!-- 開始畫面 -->
+    <div class="start">
+      <div class="start_deers">
+        <img src="images/deer_a.svg" class="start_deer"></img>
+        <img src="images/deer_b.svg" class="start_deer"></img>
+        <img src="images/deer_c.svg" class="start_deer"></img>
+      </div>
+      <p class="start_intro">永續旅人心理測驗</p>
+      <p class="start_hugText">
+        你是哪種<span class="start_hugText--red">旅</span><span class="start_hugText--blue">遊</span><span class="start_hugText--green">咖</span>
+      </p>
+      <p class="start_text">人說，出外靠朋友，好旅伴帶你上天堂！想知道你是哪一款旅人嗎？</p>
+      <p class="start_text">微笑台灣「永續旅人心理測驗」讓你從此旅遊不踩雷</p>
+      <p class="start_text">越玩越深入！越玩越永續！直接變成帶路人！</p>
+      <div class="btnCenterWrap">
+        <div class="primaryBtn btn_start">驗測開始 <img src="images/arrow_icon.svg"></div>
+      </div>
+    </div>
+
+    <!-- Q1 -->
+    <div class="q1">
+      <div class="q_wrap">
+        <span class="q_qNum">Q1</span>
+        <span class="q_text">突然獲得三天假期，最想去哪？</span>
+      </div>
+      <div class="btnFullWrap q_optionWrap">
+        <div class="primaryBtn btn_q1" value="3">受到野性的呼喚，包袱款款走進自然 <img src="images/arrow_icon.svg"></div>
+        <div class="primaryBtn btn_q1" value="2">多點心靈的啟發，報名一些導覽遊程 <img src="images/arrow_icon.svg"></div>
+        <div class="primaryBtn btn_q1" value="1">多點心靈的啟發，報名一些導覽遊程 <img src="images/arrow_icon.svg"></div>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q2">
+      <div class="q_wrap">
+        <span class="q_qNum">Q2</span>
+        <span class="q_text">決定出去玩，第一件事情應該是...</span>
+      </div>
+      <div class="btnFullWrap q_optionWrap">
+        <div class="primaryBtn btn_q2" value="3">睡得飽才能玩得爽，先挑間好民宿吧！ <img src="images/arrow_icon.svg"></div>
+        <div class="primaryBtn btn_q2" value="2">行程體驗決定一切，先看看有哪些故事景點！ <img src="images/arrow_icon.svg"></div>
+        <div class="primaryBtn btn_q2" value="1">吃飯皇帝大，先確認哪裡有好料！ <img src="images/arrow_icon.svg"></div>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q3">
+      <div class="q_wrap">
+        <span class="q_qNum">Q3</span>
+        <span class="q_text">
+          終於要出發，巧遇一個新旅伴，<br/>
+          你覺得他是...
+        </span>
+      </div>
+      <div class="btnFullWrap q_optionWrap">
+        <div class="primaryBtn btn_q3" value="2">一個穿著像日雜模特兒的攝影師，還超級會幫你拍美照 <img src="images/arrow_icon.svg"></div>
+        <div class="primaryBtn btn_q3" value="1">一個經驗豐富的人類學家，對所有事情都充滿好奇 <img src="images/arrow_icon.svg"></div>
+        <div class="primaryBtn btn_q3" value="3">一個背著超大登山包，拿著空垃圾袋跟夾子的凹豆夥伴 <img src="images/arrow_icon.svg"></div>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q4">
+      <div class="q_wrap">
+        <span class="q_qNum">Q4</span>
+        <span class="q_text">
+          醒來發現被丟進一間房間，<br/>
+          房裡有一株脆弱的樹、一杯水和一本書，你會...
+        </span>
+      </div>
+      <div class="btnFullWrap q_optionWrap">
+        <div class="primaryBtn btn_q4" value="1">我在哪裡？摸摸牆壁看會不會藏著所在位置的秘密？ <img src="images/arrow_icon.svg"></div>
+        <div class="primaryBtn btn_q4" value="3">小樹看起來快不行了， 先幫他澆澆水好了 <img src="images/arrow_icon.svg"></div>
+        <div class="primaryBtn btn_q4" value="2">我需要知道來龍去脈，翻書可能有答案 <img src="images/arrow_icon.svg"></div>
+      </div>
+    </div>
+
+    <!-- Q5 答案的代表分數未確定 -->
+    <div class="q5">
+      <div class="q_wrap">
+        <span class="q_qNum">Q5</span>
+        <span class="q_text">
+          成功離開小房間，遊程即將開始，<br/>
+          行前你獲得一份伴手禮，你覺得是...
+        </span>
+      </div>
+      <div class="btnFullWrap q_optionWrap">
+        <div class="primaryBtn btn_q5" value="1">肚子好餓，即時獲得一個餐盒裝滿在地滋味 <img src="images/arrow_icon.svg"></div>
+        <div class="primaryBtn btn_q5" value="2">我需要一個指引，請給我一份地圖和在地故事 <img src="images/arrow_icon.svg"></div>
+        <div class="primaryBtn btn_q5" value="3">即將開始一個野外旅行，我想要一個環保杯 <img src="images/arrow_icon.svg"></div>
+      </div>
+    </div>
+
+    <!-- 結果畫面 -->
+    <div class="result">
+      <img src="images/deer_a.svg" alt="" class="result_pic">
+      <p class="result_intro">你的旅人身份是...</p>
+      <p class="result_text--hug">凹豆咖</p>
+      <div class="tagWrap">
+        <div class="tag"># 遠離人類跑第一</div>
+        <div class="tag"># 見山爬山</div>
+        <div class="tag"># 見水游水</div>
+      </div>
+      <p class="result_text result_desc">
+        旅遊中你最關心<span class="text--bold">環境永續發展</span>，相當適合入住山林或靠海系民宿，大自然的健康就靠你了！
+      </p>
+      <p class="result_text result_textIcon">
+        <a class="result_fb break--pc" href="https://www.facebook.com/cwgroup/?locale=zh_TW" target="_blank">
+          <img src="images/fb_icon.svg" alt="" class="icon_fb">
+          留言<span class="text--bold">結果圖</span>抽永續好禮
+        </a>
+        </span>
+        <span class="result_download">
+          <img src="images/download_icon.svg" alt="" class="icon_download">儲存測驗結果圖
+        </span>
+      </p>
+      <div class="btnCenterWrap result_btnLinkWrap">
+        <a href="https://smiletaiwan.cw.com.tw/feature/sustainabletourism23" target="_blank" rel="noopener noreferrer" class="primaryBtn result_btnLink">解鎖專屬旅宿優惠 <img src="images/arrow_icon.svg"></a>
+        <a href="https://www.cw.com.tw/" target="_blank" rel="noopener noreferrer" class="primaryBtn result_btnLink">取得優惠兌換資格 <img src="images/arrow_icon.svg"></a>
+        <div class="primaryBtn result_btnRefresh">再玩一次 <img src="images/refresh_icon.svg"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <img src="images/mount.svg" alt="" class="mountain">
+      <img src="images/cloud.svg" alt="" class="cloud">
+    </div>
+  </div>
+
+  <div id="screenshot_temp"></div>
+
+</body>
+
+</html>

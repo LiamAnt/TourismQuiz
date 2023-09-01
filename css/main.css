@@ -1,0 +1,438 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+.title {
+  text-align: center;
+  color: #3A9AAF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 2px;
+}
+
+.content {
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid #009F7F;
+  background-image: url("../images/bg2.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right top;
+}
+
+@media(max-width: 769px) {
+  .content {
+    width: calc(100% - 50px);
+  }
+}
+
+/* logo */
+.logowrap {
+  text-align: right;
+}
+
+.logowrap_logo {
+  display: inline-block;
+  margin: 12px 10px;
+  width: 93px;
+}
+
+@media(max-width: 769px) {
+  .logowrap {
+    text-align: center;
+  }
+}
+
+/* middler & footer */
+.middler, .footer {
+  position: relative;
+  margin-top: 100px;
+  height: 50px;
+  background-color: #009F7F;
+}
+
+.footer {
+  margin-top: -8px;
+  display: none;
+  background-image: url("../images/bg1.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: left;
+}
+
+.mountain {
+  position: absolute;
+  right: 0;
+  top: -97px;
+  width: 299px;
+}
+
+.cloud {
+  position: absolute;
+  left: 0;
+  top: -74px;
+  width: 168px;
+  z-index: -1;
+}
+
+@media(max-width: 769px) {
+  .middler {
+    display: none;
+  }
+
+  .mountain {
+    top: -53px;
+    width: 164px;
+  }
+  
+  .cloud {
+    top: -40px;
+    width: 92px;
+  }
+
+  .footer {
+    margin-top: 90px;
+    display: block;
+  }
+}
+
+/* 開始畫面 */
+.start_deers {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.start_deer {
+  margin: 0 10px;
+}
+
+.start_text, .start_intro {
+  margin: 0;
+  line-height: 32px;
+  text-align: center;
+  color: #2E3638;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+}
+
+.start_intro {
+  font-size: 19px;
+}
+
+.start_hugText {
+  margin: 5px 0 20px 0;
+  text-align: center;
+  font-size: 52px;
+  font-weight: bold;
+  letter-spacing: 17px;
+}
+
+.start_hugText--red {
+  color: #E05934;
+}
+
+.start_hugText--blue {
+  color: #1783AD;
+}
+
+.start_hugText--green {
+  color: #009F7F;
+}
+
+@media(max-width: 769px) {
+  .start {
+    padding: 0 25px;
+    /* margin-bottom: 90px; */
+  }
+
+  .start_deers {
+    margin: 0 0 20px 0;
+  }
+
+  .start_deer {
+    width: 60px;
+  }
+
+  .start_text {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .start_hugText {
+    font-size: 32px;
+    letter-spacing: 5px;
+  }
+}
+
+/* 按鈕 */
+.btnCenterWrap {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.btnFullWrap {
+  margin: 20px auto;
+  width: 620px;
+}
+
+.primaryBtn {
+  align-self: center;
+  padding: 16px 60px;
+  margin: 4px 0 20px 0;
+  border-radius: 30px;
+  background-color: #009F7F;
+  box-shadow: 0px 4px 0px 0px #008167;
+  font-size: 19px;
+  letter-spacing: 0.8px;
+  color: #FFEB99;
+}
+
+.primaryBtn:hover {
+  box-shadow: 0px 2px 0px 0px #008167;
+  cursor: pointer;
+  color: #FFF;
+}
+
+.btn_arrow {
+  background-color: #FFEB99;
+  width: 10px;
+  height: 10px;
+
+}
+
+@media(max-width: 769px) {
+  .primaryBtn {
+    font-size: 16px;
+  }
+
+  .btnFullWrap {
+    width: 100%;
+  }
+
+  .btnFullWrap .primaryBtn {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px 30px;
+    text-align: center;
+  }
+}
+
+/* q1~q5 */
+.q1, .q2, .q3, .q4, .q5, .result {
+  display: none;
+}
+
+.q_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.q_qNum {
+  display: block;
+  margin-right: 8px;
+  color: #E05934;
+  font-family: Rubik;
+  font-size: 52px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+.q_text {
+  display: block;
+  color: #2E3638;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.q_optionWrap {
+  margin-bottom: 126px;
+}
+
+@media(max-width: 769px) {
+  .q1, .q2, .q3, .q4, .q5 {
+    padding: 0 25px;
+  }
+
+  .q_wrap {
+    display: block;
+  }
+
+  .q_qNum {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .q_text {
+    text-align: center;
+  }
+}
+
+/* 結果畫面 */
+.result {
+  position: relative;
+  padding: 0 40px;
+}
+
+.result_pic {
+  position: absolute;
+  top: -10px;
+  right: 40px;
+  width: 220px;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
+.result_intro {
+  margin: 0;
+  color: #2E3638;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.result_text--hug {
+  margin: 8px 0;
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.tagWrap {
+  margin: 20px 0;
+  width: 510px;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 5px;
+  background-color: #009F7F;
+  border-radius: 4px;
+  color: #FFF;
+  padding: 6px 7px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.result_text {
+  max-width: 480px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 190%;
+  letter-spacing: 0.8px;
+}
+
+.result_textIcon {
+  display: flex;
+}
+
+.icon_fb {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.icon_download {
+  width: 20px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.result_btnLinkWrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 520px;
+  justify-content: start;
+}
+
+.primaryBtn.result_btnLink, .primaryBtn.result_btnRefresh {
+  width: 250px;
+  margin-right: 10px;
+  word-break: normal;
+  padding: 16px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.break--pc {
+  display: flex;
+}
+
+.result_download:hover {
+  cursor: pointer;
+}
+
+#screenshot_temp {
+  display: none;
+}
+
+a.result_fb {
+  text-decoration: none;
+  color: #2E3638;
+}
+
+.result_fb:hover {
+  cursor: pointer;
+}
+
+@media(max-width: 769px) {
+  .result {
+    padding: 0 20px;
+  }
+
+  .result_pic {
+    width: 128px;
+    right: 20px;
+  }
+
+  .result_intro {
+    font-size: 17px;
+  }
+
+  .result_text--hug {
+    font-size: 32px;
+    margin: 5px 0 15px 0;
+  }
+
+  .tagWrap {
+    width: 200px;
+    margin: 10px 0;
+  }
+
+  .tag {
+    display: block;
+    width: max-content;
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+
+  .result_textIcon {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .break--pc {
+    display: flex;
+    width: 100%;
+  }
+
+  .icon_download {
+    margin-left: 0;
+  }
+
+  .result_btnLinkWrap {
+    display: block;
+    width: 100%;
+  }
+
+  .primaryBtn.result_btnLink, .primaryBtn.result_btnRefresh {
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+  }
+}
