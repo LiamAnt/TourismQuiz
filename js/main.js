@@ -10,13 +10,13 @@ $(document).ready(function () {
   let ans = 0;
 
   /* 按鈕效果 */
-  $('.primaryBtn').hover(function() {
+  $('.btn_arrow').hover(function() {
     $(this).find('img').attr('src', './images/arrow_icon_hover.svg');
   }, function() {
     $(this).find('img').attr('src', './images/arrow_icon.svg');
   });
 
-  $('.primaryBtn.result_btnRefresh').hover(function() {
+  $('.result_btnRefresh').hover(function() {
     $(this).find('img').attr('src', './images/refresh_icon_hover.svg');
   }, function() {
     $(this).find('img').attr('src', './images/refresh_icon.svg');
